@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//EventHub Demo//Kulturni kalendar Zagreb//HR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:ical-demo-0001@eventhub.local
+DTSTART:20260704T190000Z
+DTEND:20260704T230000Z
+SUMMARY:Ljetne večeri klasike - Zagrebačka filharmonija
+LOCATION:Atrij Klovićevih dvora\, Jezuitski trg 4
+DESCRIPTION:Koncert Zagrebačke filharmonije na otvorenom: Vivaldi\, Mozar
+ t i filmska glazba pod zvijezdama Gornjeg grada.
+CATEGORIES:Glazba
+URL:https://www.zgf.hr
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-demo-0002@eventhub.local
+DTSTART;VALUE=DATE:20260815
+SUMMARY:Velika Gospa - blagdan (neradni dan)
+DESCRIPTION:Državni blagdan u Republici Hrvatskoj.
+CATEGORIES:Blagdan
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-demo-0003@eventhub.local
+DTSTART:20260912T080000Z
+DTEND:20260912T140000Z
+SUMMARY:Zagrebački maraton - prijave i utrka
+LOCATION:Trg bana Josipa Jelačića
+DESCRIPTION:35. zagrebački maraton: maraton\, polumaraton i građanska utr
+ ka od 5 km kroz centar grada.
+CATEGORIES:Sport
+URL:https://www.zagreb-marathon.com
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-demo-0004@eventhub.local
+DTSTART:20261003T100000Z
+DTEND:20261003T180000Z
+SUMMARY:Dan otvorenih vrata TVZ-a
+LOCATION:Tehničko veleučilište u Zagrebu\, Vrbik 8
+DESCRIPTION:Predstavljanje studijskih programa\, radionice i demonstracij
+ e studentskih projekata.
+CATEGORIES:Edukacija
+URL:https://www.tvz.hr
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  EventHub - XML Schema za odgovor API-ja /api/events.php?format=xml
+  Opisuje strukturu, tipove podataka i obavezna polja.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <!-- Dozvoljene vrijednosti izvora podataka -->
+  <xs:simpleType name="sourceType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="manual"/>
+      <xs:enumeration value="ticketmaster"/>
+      <xs:enumeration value="ical"/>
+      <xs:enumeration value="scraper"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Pojedino događanje -->
+  <xs:complexType name="eventType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="category" type="xs:string"/>
+      <xs:element name="venue_name" type="xs:string" minOccurs="0"/>
+      <xs:element name="venue_address" type="xs:string" minOccurs="0"/>
+      <xs:element name="city" type="xs:string" minOccurs="0"/>
+      <xs:element name="start_datetime" type="xs:dateTime"/>
+      <xs:element name="end_datetime" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="price_info" type="xs:string" minOccurs="0"/>
+      <xs:element name="event_url" type="xs:anyURI" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+    <xs:attribute name="source" type="sourceType" use="required"/>
+  </xs:complexType>
+
+  <!-- Korijenski element -->
+  <xs:element name="events">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="event" type="eventType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="generated" type="xs:dateTime" use="required"/>
+      <xs:attribute name="count" type="xs:nonNegativeInteger" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

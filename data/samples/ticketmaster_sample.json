@@ -1,0 +1,88 @@
+{
+  "_embedded": {
+    "events": [
+      {
+        "name": "Dubioza kolektiv - Šalša tour",
+        "id": "tm-demo-0001",
+        "url": "https://www.ticketmaster.hr/event/dubioza-kolektiv",
+        "info": "Veliki koncert Dubioze kolektiv u sklopu europske turneje. Predgrupa bit će objavljena naknadno.",
+        "images": [
+          { "url": "https://s1.ticketm.net/dam/a/demo/dubioza.jpg" }
+        ],
+        "dates": { "start": { "dateTime": "2026-06-27T19:00:00Z", "localDate": "2026-06-27" } },
+        "classifications": [ { "segment": { "name": "Glazba" } } ],
+        "priceRanges": [ { "min": 25, "max": 45, "currency": "EUR" } ],
+        "_embedded": {
+          "venues": [
+            {
+              "name": "Tvornica kulture",
+              "address": { "line1": "Šubićeva 2" },
+              "city": { "name": "Zagreb" }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cirque du Soleil: OVO",
+        "id": "tm-demo-0002",
+        "url": "https://www.ticketmaster.hr/event/cirque-du-soleil-ovo",
+        "info": "Spektakularna predstava svjetski poznatog cirkusa inspirirana svijetom kukaca.",
+        "images": [
+          { "url": "https://s1.ticketm.net/dam/a/demo/ovo.jpg" }
+        ],
+        "dates": { "start": { "dateTime": "2026-10-15T18:00:00Z", "localDate": "2026-10-15" } },
+        "classifications": [ { "segment": { "name": "Umjetnost i kazalište" } } ],
+        "priceRanges": [ { "min": 39, "max": 99, "currency": "EUR" } ],
+        "_embedded": {
+          "venues": [
+            {
+              "name": "Arena Zagreb",
+              "address": { "line1": "Ulica Vice Vukova 8" },
+              "city": { "name": "Zagreb" }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Nick Cave & The Bad Seeds",
+        "id": "tm-demo-0003",
+        "url": "https://www.ticketmaster.hr/event/nick-cave",
+        "info": "Jedini koncert u regiji u sklopu turneje Wild God.",
+        "images": [
+          { "url": "https://s1.ticketm.net/dam/a/demo/nickcave.jpg" }
+        ],
+        "dates": { "start": { "dateTime": "2026-08-20T18:30:00Z", "localDate": "2026-08-20" } },
+        "classifications": [ { "segment": { "name": "Glazba" } } ],
+        "priceRanges": [ { "min": 55, "max": 120, "currency": "EUR" } ],
+        "_embedded": {
+          "venues": [
+            {
+              "name": "Šalata",
+              "address": { "line1": "Schlosserove stube 2" },
+              "city": { "name": "Zagreb" }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Stand-up: Marina Orsag",
+        "id": "tm-demo-0004",
+        "url": "https://www.ticketmaster.hr/event/marina-orsag",
+        "info": "Nova samostalna stand-up predstava.",
+        "images": [],
+        "dates": { "start": { "dateTime": "2026-07-10T19:00:00Z", "localDate": "2026-07-10" } },
+        "classifications": [ { "segment": { "name": "Komedija" } } ],
+        "_embedded": {
+          "venues": [
+            {
+              "name": "Kino SC",
+              "address": { "line1": "Savska cesta 25" },
+              "city": { "name": "Zagreb" }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "page": { "size": 50, "totalElements": 4, "totalPages": 1, "number": 0 }
+}
