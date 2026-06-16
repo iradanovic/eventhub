@@ -23,8 +23,12 @@ function import_ticketmaster(): array
             return $stats;
         }
     } else {
+        if (TICKETMASTER_API_KEY === '' || TICKETMASTER_API_KEY === 'OVDJE_UPISITE_SVOJ_API_KLJUC') {
+            $stats['errors'][] = 'Ticketmaster API ključ nije postavljen (config.local.php).';
+            return $stats;
+        }
         $url = sprintf(
-            'https://app.ticketmaster.com/discovery/v2/events.json?apikey=%s&city=%s&countryCode=%s&size=50&sort=date,asc',
+            'https://app.ticketmaster.com/discovery/v2/events.json?apikey=%s&city=%s&countryCode=%s&locale=*&size=50&sort=date,asc',
             urlencode(TICKETMASTER_API_KEY),
             urlencode(TICKETMASTER_CITY),
             urlencode(TICKETMASTER_COUNTRY)

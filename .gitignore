@@ -1,0 +1,11 @@
+# Lokalne tajne (lozinke, API ključ) - NIKAD na GitHub
+/config.local.php
+
+# Uploadane slike događanja (generira aplikacija)
+/assets/uploads/*
+!/assets/uploads/.gitkeep
+
+# Sistemske datoteke
+.DS_Store
+Thumbs.db
+*.log
