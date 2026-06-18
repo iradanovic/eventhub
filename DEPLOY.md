@@ -83,3 +83,11 @@ chmod 755 assets/uploads
 Bez `config.local.php` aplikacija koristi zadane XAMPP postavke
 (`root`, bez lozinke, baza `eventhub`, `DEMO_MODE = true`). Lokalno uvezite
 `database.sql` (ima `CREATE DATABASE`).
+
+## Ažuriranje postojeće baze (dodana tablica gallery)
+
+Ako je baza uvezena PRIJE uvođenja admin galerije, `database_cpanel.sql` se
+ne smije ponovno uvoziti (briše i nanovo kreira tablice, pa bi se izgubila
+postojeća događanja i korisnici). Umjesto toga, u phpMyAdminu -> Import
+uvezite samo **`migration_gallery.sql`** - dodaje tablicu `gallery` i
+početne slike, bez diranja ostalih tablica.
