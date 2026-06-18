@@ -74,8 +74,8 @@ require __DIR__ . '/includes/header.php';
 
   <div class="map-wrap">
     <iframe
-      title="Karta - Tehničko veleučilište u Zagrebu, Vrbik 8"
-      src="https://www.google.com/maps?q=Tehni%C4%8Dko+veleu%C4%8Dili%C5%A1te+u+Zagrebu,+Vrbik+8,+Zagreb&output=embed"
+      title="Karta - Veleučilište Velika Gorica, Zagrebačka 5, Velika Gorica"
+      src="https://www.google.com/maps?q=Veleu%C4%8Dili%C5%A1te+Velika+Gorica,+Zagreba%C4%8Dka+5,+Velika+Gorica&output=embed"
       width="100%" height="320" style="border:0" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
   </div>
