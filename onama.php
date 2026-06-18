@@ -35,7 +35,7 @@ require __DIR__ . '/includes/header.php';
     <p>
       Iza scene radi CMS sustav: administratori uređuju događanja, pokreću uvoz iz
       izvora i upravljaju korisnicima i njihovim rolama, dok registrirani korisnici
-      imaju vlastiti profil. Projekt je izrađen u sklopu kolegija Napredno programiranje
+      imaju vlastiti profil. Projekt je izrađen u sklopu kolegija Napredno web programiranje
       i u potpunosti je otvorenog koda - slobodno ga proučite, pokrenite lokalno
       ili nadogradite.
     </p>

@@ -3,7 +3,7 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <p class="footer-logo">Event<span>Hub</span><i aria-hidden="true">*</i></p>
-    <p>Agregator događanja · studentski projekt iz kolegija Napredno programiranje.</p>
+    <p>Agregator događanja · studentski projekt iz kolegija Napredno web programiranje.</p>
     <p class="footer-sources">
       Izvori podataka:
       <span class="badge badge-tm">Ticketmaster API</span>
