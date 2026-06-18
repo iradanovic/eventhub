@@ -15,6 +15,7 @@ USE eventhub;
 DROP TABLE IF EXISTS messages;
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS events;
+DROP TABLE IF EXISTS gallery;
 
 -- ------------------------------------------------------------
 -- Tablica: events (događanja iz svih izvora)
@@ -84,6 +85,32 @@ CREATE TABLE messages (
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (id)
 ) ENGINE=InnoDB;
+
+-- ------------------------------------------------------------
+-- Tablica: gallery (slike na stranici Galerija, s opisom)
+-- ------------------------------------------------------------
+CREATE TABLE gallery (
+  id         INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  image_url  VARCHAR(500) NOT NULL,
+  alt_text   VARCHAR(150) NOT NULL,
+  caption    VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB;
+
+INSERT INTO gallery (image_url, alt_text, caption) VALUES
+('assets/img/gal-1.svg', 'Publika na koncertu',
+ 'Atmosfera s prošlogodišnjeg ljetnog koncerta na Jarunu.'),
+('assets/img/gal-2.svg', 'Ljetno kino',
+ 'Projekcija pod zvijezdama na Ljetnoj pozornici Tuškanac.'),
+('assets/img/gal-3.svg', 'Sajamski paviljon',
+ 'Interliber - najveći sajam knjiga na Zagrebačkom velesajmu.'),
+('assets/img/gal-4.svg', 'Galerijski postav',
+ 'Postav izložbe bečke secesije u Muzeju za umjetnost i obrt.'),
+('assets/img/gal-5.svg', 'Ulični festival',
+ 'Cest is d\'Best - ulični zabavljači u centru grada.'),
+('assets/img/gal-6.svg', 'Advent na Zrinjevcu',
+ 'Zimska čarolija ispod platana - nagrađivani zagrebački Advent.');
 
 -- ------------------------------------------------------------
 -- Početni (ručno uneseni) podaci - source = 'manual'

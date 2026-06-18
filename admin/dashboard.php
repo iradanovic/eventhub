@@ -75,6 +75,7 @@ require __DIR__ . '/../includes/header.php';
     <a class="btn btn-primary" href="import.php">Uvoz podataka iz izvora</a>
     <a class="btn btn-ghost" href="event_form.php">+ Novo događanje (ručno)</a>
     <a class="btn btn-ghost" href="users.php">Korisnici</a>
+    <a class="btn btn-ghost" href="gallery.php">Galerija</a>
     <a class="btn btn-ghost" href="../api/events.php?format=xml" target="_blank" rel="noopener">XML export</a>
     <a class="btn btn-ghost" href="../api/events.php?format=json" target="_blank" rel="noopener">JSON export</a>
   </div>

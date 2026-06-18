@@ -7,20 +7,9 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/includes/functions.php';
 
-$gallery = [
-    ['assets/img/gal-1.svg', 'Publika na koncertu',
-     'Atmosfera s prošlogodišnjeg ljetnog koncerta na Jarunu.'],
-    ['assets/img/gal-2.svg', 'Ljetno kino',
-     'Projekcija pod zvijezdama na Ljetnoj pozornici Tuškanac.'],
-    ['assets/img/gal-3.svg', 'Sajamski paviljon',
-     'Interliber - najveći sajam knjiga na Zagrebačkom velesajmu.'],
-    ['assets/img/gal-4.svg', 'Galerijski postav',
-     'Postav izložbe bečke secesije u Muzeju za umjetnost i obrt.'],
-    ['assets/img/gal-5.svg', 'Ulični festival',
-     'Cest is d\'Best - ulični zabavljači u centru grada.'],
-    ['assets/img/gal-6.svg', 'Advent na Zrinjevcu',
-     'Zimska čarolija ispod platana - nagrađivani zagrebački Advent.'],
-];
+$gallery = db()->query(
+    'SELECT image_url, alt_text, caption FROM gallery ORDER BY id'
+)->fetchAll();
 
 $pageTitle  = 'Galerija';
 $activePage = 'galerija';
@@ -35,10 +24,10 @@ require __DIR__ . '/includes/header.php';
   </p>
 
   <div class="gallery-grid">
-    <?php foreach ($gallery as [$src, $alt, $caption]): ?>
+    <?php foreach ($gallery as $g): ?>
       <figure class="gallery-item">
-        <img src="<?= e($src) ?>" alt="<?= e($alt) ?>" loading="lazy">
-        <figcaption><?= e($caption) ?></figcaption>
+        <img src="<?= e($g['image_url']) ?>" alt="<?= e($g['alt_text']) ?>" loading="lazy">
+        <figcaption><?= e($g['caption']) ?></figcaption>
       </figure>
     <?php endforeach; ?>
   </div>

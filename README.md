@@ -30,7 +30,8 @@ Studentski projekt iz kolegija Napredno web programiranje. Aplikacija **agregira
 
 - URL: `http://localhost/eventhub/admin/`
 - Prijava: **admin** / **admin123**
-- Funkcije: statistika, CRUD događanja, pregled poruka, pokretanje uvoza iz sva tri izvora
+- Funkcije: statistika, CRUD događanja, CRUD slika u galeriji, pregled poruka,
+  upravljanje korisnicima, pokretanje uvoza iz sva tri izvora
 
 ### Demo način rada
 
@@ -97,7 +98,8 @@ i na stranici detalja. Početna događanja koriste ilustracije iz `assets/img/`.
 ## Dodatne stranice
 
 - `onama.php` - o projektu, s ugrađenim videom
-- `galerija.php` - galerija slika s opisima
+- `galerija.php` - galerija slika s opisima (sadržaj iz baze, uređuje se kroz
+  `admin/gallery.php`)
 - `kontakt.php` - forma s poljima ime, prezime, e-mail, država, newsletter,
   naslov i poruka + ugrađena Google Maps karta
 
