@@ -105,3 +105,10 @@ i na stranici detalja. Početna događanja koriste ilustracije iz `assets/img/`.
 
 Skripta briše i ponovno kreira tablice (čista instalacija). Nakon importa
 uvezena događanja vraćate kroz **Admin → Uvoz podataka iz izvora**.
+
+## Deploy na cPanel
+
+Upute za objavu na cPanel hostingu (SSH, poddomena, baza, `config.local.php`)
+nalaze se u [DEPLOY.md](DEPLOY.md). Za uvoz baze na serveru koristi se
+**`database_cpanel.sql`** - ista shema kao `database.sql`, ali bez
+`CREATE DATABASE`/`USE`, jer cPanel bazu već kreira preko svog sučelja.
