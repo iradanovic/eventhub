@@ -1,6 +1,6 @@
 # EventHub — agregator događanja
 
-Studentski projekt iz kolegija web servisa. Aplikacija **agregira događanja u Zagrebu iz tri različita tipa izvora podataka**, sprema ih u MySQL bazu i nudi kroz responzivno web sučelje te **vlastiti XML/JSON API**.
+Studentski projekt iz kolegija Napredno programiranje. Aplikacija **agregira događanja u Zagrebu iz tri različita tipa izvora podataka**, sprema ih u MySQL bazu i nudi kroz responzivno web sučelje te **vlastiti XML/JSON API**.
 
 ## Tehnologije
 
